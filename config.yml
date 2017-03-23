@@ -1,0 +1,88 @@
+# Configuration for WPDistillery executed by setup.sh
+#
+# Author: Flurin Dürst » github.com/flurinduerst
+# URL: https://github.com/flurinduerst/WPDistillery
+#
+# File version 1.4.6
+
+# SETUP SETTINGS
+#################################################################
+
+# WordPress folder
+wpfolder: public
+
+# core language
+wplocale: en_US
+
+# admin user settings
+admin:
+  user: admin
+  password: admin
+  email: mail@domain.tld
+
+# scotch box db access
+db:
+  name: dindb
+  user: root
+  pass: root
+  prefix: wpdin_
+
+# WORDPRESS SETTINGS
+#################################################################
+
+wpsettings:
+  url: din.local
+  title: Dawah Institute
+  rewrite_structure: /%postname%/
+
+# THEME
+#################################################################
+
+# theme to install, choose new name in 'rename' or leave empty
+theme: 
+  name: Sage
+  rename: "Dawah"
+  url: //https://github.com/roots/sage.git
+
+# PLUGINS
+#################################################################
+
+# plugins to install & activate
+plugins_active:
+  - disable-comments
+  - duplicate-post
+  - enable-media-replace
+  - favicon-by-realfavicongenerator
+  - regenerate-thumbnails
+  - simple-page-ordering
+  - user-switching
+  - google-sitemap-generator
+
+# plugins to install
+plugins_inactive:
+  #development
+  - custom-post-type-ui
+  - search-and-replace
+  - capability-manager-enhanced
+  #administration
+  - adminimize
+  - admin-menu-editor
+  - admin-menu-reorder
+  - wordpress-seo
+  #security/backup
+  - wp-security-audit-log
+  - backwpup
+
+# SETUP OPTIONS
+####################################################################
+# if you don't want the setup to run all tasks, set them to false
+
+installation:
+  wp: true
+  theme: true
+  plugins: true
+  cleanup: true
+    comment: true
+    posts: true
+    files: true
+    themes: true
