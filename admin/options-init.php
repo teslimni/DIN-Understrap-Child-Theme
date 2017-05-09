@@ -67,6 +67,7 @@
         'database' => 'options',
         'transient_time' => '3600',
         'network_sites' => TRUE,
+        'dev_mode' => false
     );
 
     // SOCIAL ICONS -> Setup custom links in the footer for quick links in your panel footer icons.

@@ -52,11 +52,7 @@ get_header(); ?>
                                       <div class="col-sm-8 download-meta">
                                         <h4>Further reading</h4>
                                          <h1 class="m-t-3 text-primary"><?php echo the_field('resource_title'); ?></h1>
-                                         <ul>
-                                           <li>Develop confidence in tackling the arguments used by the Boko Haram Group</li>
-                                           <li>Master the simple methods of answering the Boko Haram questions</li>
-                                           <li>Understand why conventional education is not our problem, but our attitude</li>
-                                         </ul>
+                                          <?php echo the_field('resource_description'); ?>
                                          <h4>Subscribe to download your copy now</h4>
                                          <?php
                                            //$wpMail = new wpMail();

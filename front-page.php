@@ -79,6 +79,7 @@ get_header(); ?>
                      query_posts(
                           array(
                               'posts_per_page' => 6,
+                              'category_name' => 'new-events',
                               'ignore_sticky_posts' => 1
                           )
                       );
