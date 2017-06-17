@@ -7578,6 +7578,10 @@ article .wp-post-image {
 .comments-area {
   clear: both; }
 
+.comment-author.vcard > .avatar {
+  border-radius: 100%;
+  width: 34px !important; }
+
 .prev,
 .next {
   margin-bottom: 50px;
@@ -7604,8 +7608,7 @@ aside .nav-link h5 {
 
 .site-footer {
   background-color: #434a54;
-  padding-top: 100px;
-  padding-bottom: 40px; }
+  padding-top: 100px; }
   .site-footer h2 {
     color: #ffffff;
     font-size: 1.2rem; }

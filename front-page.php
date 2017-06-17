@@ -16,12 +16,12 @@ get_header(); ?>
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-            <div class="col-md-6">
-              <img class="gift" src="<?php echo $redux_teslim['optin']; ?>" alt="">
-            </div>
-              <div class="col-md-6 opt-in">
-                 <?php do_action('opt_in'); ?>
-              </div>
+               <div class="col-md-6">
+                 <img class="gift" src="<?php echo $redux_teslim['optin']; ?>" alt="">
+               </div>
+                <div class="col-md-6 opt-in">
+                   <?php do_action('opt_in'); ?>
+                </div>
             </div>
         </div>
       </div>

@@ -54,7 +54,7 @@ global $redux_teslim;
                         Old Airport Quarters<br>
                         PMB 229, Minna<br>
                         Niger State, Nigeria<br>
-                        email: dawahinstitute(at)gmail.com
+                        email: support@dawahinstitute.org
                     </address>
                 </div>
             </div><!-- .row -->
@@ -64,6 +64,7 @@ global $redux_teslim;
                     <p class="text-muted text-xs-center footer-copyright">
                         Copyright &copy; <?php echo date('Y'); ?> <a href="<?php echo bloginfo('url'); ?>"><?php echo $redux_teslim['company-id']; ?></a> All Rights Reserved.
                     </p>
+                    <p class="text-muted text-xs-center dev-credit">Designed and Developed by <a href="https://github.com/teslimni">Teslim Adeyemo</a></p>
                 </div>
             </div>
         </div><!-- .site-info -->

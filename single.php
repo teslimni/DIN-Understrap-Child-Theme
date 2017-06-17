@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package understrap
+ * @package understrap-child
  */
 
 get_header(); ?>
@@ -24,13 +24,11 @@ get_header(); ?>
                           <div class="row resource_meta">
                             <?php if( current_user_can('read') ) : ?>
                                 <?php if( get_field('download_link') || get_field('resource_image') || get_field('resource_title')  ): ?>
-                                  <p><?php the_field('field_name'); ?></p>
-
-                                      <div class="col-sm-4 img-meta">
+                                  <div class="col-md-4 img-meta m-b-3">
                                           <!-- <h2 class="download">Download</h2> -->
                                         <img class="download-gift" src=" <?php the_field('resource_image'); ?>" alt="">
                                       </div>
-                                      <div class="col-sm-8 download-meta">
+                                      <div class="col-md-8 download-meta">
                                         <h4>Further reading</h4>
                                          <h1 class="m-t-3 text-primary"><?php echo the_field('resource_title'); ?></h1>
                                          <ul>
@@ -45,20 +43,16 @@ get_header(); ?>
                                <?php if( get_field('download_link') || get_field('resource_image') || get_field('resource_title')  ): ?>
                                   <p><?php the_field('field_name'); ?></p>
 
-                                      <div class="col-sm-4 img-meta">
+                                      <div class="col-md-4 img-meta">
                                           <!-- <h2 class="download">Download</h2> -->
                                         <img class="download-gift" src=" <?php the_field('resource_image'); ?>" alt="">
                                       </div>
-                                      <div class="col-sm-8 download-meta">
+                                      <div class="col-md-8 download-meta">
                                         <h4>Further reading</h4>
                                          <h1 class="m-t-3 text-primary"><?php echo the_field('resource_title'); ?></h1>
                                           <?php echo the_field('resource_description'); ?>
                                          <h4>Subscribe to download your copy now</h4>
-                                         <?php
-                                           //$wpMail = new wpMail();
-                                           //$wpMail->hardcoded(1);
-                                           newsletters_hardcode(false, false, false, 1);
-                                         ?>
+                                         <?php newsletters_hardcode(false, false, false, 1); ?>
                                       </div>
                                  <?php endif; ?>
                             <?php endif ?>

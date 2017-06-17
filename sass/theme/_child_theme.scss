@@ -330,6 +330,10 @@ article {
 .comments-area {
     clear: both;
 }
+.comment-author.vcard > .avatar {
+    border-radius: 100%;
+    width: 34px !important;
+}
 
 .prev,
 .next {
@@ -372,7 +376,6 @@ aside {
 .site-footer {
     background-color: #434a54;
     padding-top: 100px;
-    padding-bottom: 40px;
 
     & h2 {
         color: #ffffff;
