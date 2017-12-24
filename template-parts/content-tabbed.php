@@ -23,7 +23,16 @@
           <div class="tab-pane downloads" id="downloads" role="tabpanel">
               <p>The resources below are all yours for free:
               </p>
-              <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+              <?php
+                $count = get_option('posts_per_page', 5);
+                $args = array (
+                    'posts_per_page' => $count,
+                    'offset' => $offset,
+                    'post_type' => 'download', // custom post type
+                 );
+              ?>
+              <?php $query = new WP_Query($args); ?>
+              <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
                <?php if( get_field('download_link') || get_field('resource_image') || get_field('resource_title')  ): ?>
                 <ul class="media-list">
                   <li class="media">

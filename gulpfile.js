@@ -219,6 +219,6 @@ gulp.task('copy-assets', function() {
 
 // Run // gulp dist // Copies the files to the dist folder for distributon
 gulp.task('dist', function() {
-    gulp.src(['**/*','!sass','!sass/**','!bower_components','!bower_components/**','!node_modules','!node_modules/**','!src','!src/**','!dist', '!dist/**', '!bower.json', '!gulpfile.js', '!package.json', '!.phpintel', '!config.yml', 'npm-debug.log', '*'])
+    gulp.src(['**/*','!sass','!sass/**','!bower_components','!bower_components/**','!node_modules','!node_modules/**','!src','!src/**','!dist', '!dist/**', '!bower.json', '!gulpfile.js', '!package.json', '!.phpintel', '!config.yml', '!npm-debug.log', '*'])
     .pipe(gulp.dest('dist/'))
 });

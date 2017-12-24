@@ -1,4 +1,5 @@
 <?php
+/*
 function dwwp_register_post_type() {
     $singular = 'Download';
     $plural = 'Downloads';
@@ -59,6 +60,7 @@ add_action('init', 'dwwp_register_post_type');
  * @param array|string  Taxonomy arguments
  * @return null|WP_Error WP_Error if errors, otherwise null.
  */
+/*
 function dwwp_register_taxonomy() {
     $plural = 'Resources';
     $singular = 'Resource';

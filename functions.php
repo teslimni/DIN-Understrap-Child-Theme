@@ -1,7 +1,4 @@
 <?php
-/*
- * Add Redux Framework
- */
 
 function understrap_remove_scripts() {
     wp_dequeue_style( 'understrap-styles' );
@@ -23,6 +20,9 @@ function understrap_setup() {
         'aside', 'gallery', 'image', 'status', 'video', 'quote', 'link', 'audio', 'chat'
     ) );
 
+    //add feature image capability
+    add_theme_support('post-thumbnails');
+
     // add theme support: HTML5 markup
     add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
 
@@ -34,6 +34,7 @@ add_action( 'after_setup_theme', 'understrap_setup' );
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
     wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array());
+    wp_enqueue_style( 'din-styles', get_stylesheet_directory_uri() . '/css/din.css', array());
     wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), '0.1.0', true );
 }
 
@@ -52,8 +53,9 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-require get_stylesheet_directory() . '/inc/resources.php';
 require get_stylesheet_directory() . '/admin/admin-init.php';
+require get_stylesheet_directory() . '/PostTypes/PostType.php';
+require get_stylesheet_directory() . '/inc/resources.php';
 require get_stylesheet_directory() . '/inc/opt-in.php';
 
 function child_understrap_home_bottom() {
@@ -106,5 +108,16 @@ function child_understrap_home_bottom() {
         'before_title'  => '<h4 class="widgettitle">',
         'after_title'   => '</h4>',
     ) );
+    register_sidebar( array(
+        'name' => __( 'Promo', 'din' ),
+        'id' => 'promo',
+        'description' => __( 'Widgets in this area will be shown at the top sidebar.', 'din' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widgettitle">',
+        'after_title'   => '</h4>',
+    ) );
 }
 add_action( 'widgets_init', 'child_understrap_home_bottom' );
+
+

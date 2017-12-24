@@ -1,36 +1,39 @@
 // ======== Front Page =========//
 
-@include media-breakpoint-up(md) {
-  .jumbotron {
-    .home & {
-        background-image: url("../img/grand-mosque.jpg");
-    }
-    height: 514px;
-    .gift {
-        margin-left: 1rem;
-        height: 60%;
-     }
-  }
-}
+    // @include media-breakpoint-up(md) {
+    //   .jumbotron {
+    //     .home & {
+    //         background-image: url("../img/grand-mosque.jpg");
+    //     }
+    //     height: 514px;
+    //     .gift {
+    //         margin-left: 1rem;
+    //         height: 60%;
+    //      }
+    //   }
+    // }
 
-@include media-breakpoint-down(sm) {
-    .jumbotron {
-        .gift {
-            margin-bottom: 20px;
-            margin-left: 3.5rem;
-            width: 75%;
-        }
-    }
-}
+// @include media-breakpoint-down(sm) {
+//     .jumbotron {
+//         .gift {
+//             margin-bottom: 20px;
+//             margin-left: 3.5rem;
+//             width: 75%;
+//         }
+//     }
+// }
 
-@include media-breakpoint-up(lg) {
-    .jumbotron {
-        .gift {
-            margin-bottom: 20px;
-            margin-left: 8rem;
-        }
-    }
-}
+// @include media-breakpoint-up(lg) {
+//     .jumbotron {
+//         .gift {
+//             margin-bottom: 20px;
+//             margin-left: 8rem;
+//         }
+//     }
+// }
+
+
+
 
 .news.widget_newsletters {
     background: #eee;
@@ -169,6 +172,10 @@
     }
 }
 
+h4.h5.post-title {
+    font-size: 1rem;
+}
+
 .assistive-text {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
@@ -219,6 +226,7 @@
 
     .cat-description {
         margin-left: 10rem;
+        color: #fff;
 
         @media all and (max-width: 767px) {
            margin: 0 15px;
@@ -259,6 +267,14 @@
     left: 0;
     color: #fff;
     width: 100%;
+}
+.cat-intro {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 
@@ -335,6 +351,7 @@ article {
     width: 34px !important;
 }
 
+
 .prev,
 .next {
     margin-bottom: 50px;
@@ -354,12 +371,21 @@ a.btn-download {
     color: #fff !important;
 }
 
+h4.card-title.post-title.h5 {
+    font-size: 1.2rem;
+}
+
 
 // Sidebar
+#secondary {
+    .h5, h5 {
+        font-size: 1rem;
+    }
+}
 #secondary img,
 article img,
 figure {
-    width: 150px;
+    //width: 150px;
 }
 
 aside {
@@ -419,7 +445,7 @@ aside {
         display: block;
         margin-left: auto;
         margin-right: auto;
-          padding-top: 3rem;
+        //padding-top: 3rem;
         width: 30%;
 
         @media all and (max-width: 360px) {
@@ -458,6 +484,66 @@ blockquote {
     p {
         @extend text-muted !optional;
         font-size: .9rem;
+    }
+}
+
+.book-cover > img {
+  width: 44%;
+  margin-left: 28%
+}
+.heading-book {
+  padding: 1px 10px;
+  background: #eee;
+  margin-bottom: 1px;
+}
+.book-id-title > h1 {
+  text-decoration: none !important;
+  font-size: 3rem;
+}
+.content-block {
+  border: 3px solid #eee;
+  border-radius: 5px;
+}
+.content-book {
+  background: #fff;
+  border: 6px solid #ddd;
+  border-radius: 10px;
+}
+.single-book .wrapper {
+  padding-top: 0;
+}
+.content-read {
+  //border: 1px solid #eee;
+  border-radius: 10px;
+}
+.book-content {
+  padding: 10px;
+  text-align: justify;
+}
+.book-optin-bg {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.book-card {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.book-button {
+   a {
+    color: #fff;
+   }
+}
+.reply {
+    margin: 20px 0;
+    border: 1px solid #eee;
+    width: 20%;
+    border-radius: 5px;
+    padding: 5px 0;
+    text-align: center;
+    &:hover {
+        background: #eee;
     }
 }
 

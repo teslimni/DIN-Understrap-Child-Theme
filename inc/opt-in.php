@@ -12,7 +12,3 @@ function gift_optin() { ?>
 <!--End signup-->
 <?php }
 add_action('opt_in', 'gift_optin'); ?>
-
-
-
-

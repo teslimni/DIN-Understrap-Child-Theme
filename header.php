@@ -62,15 +62,15 @@
             </div> <!-- .container -->
 
         </nav><!-- .site-navigation -->
+    </div><!-- .wrapper-navbar end -->
         <?php if( is_category() ) : ?>
                 <div class="cat-box">
                     <div class="cat-description">
-                        <?php echo category_description(); ?>
-                    <p class="btn btn-primary-outline cat-tag"><?php single_cat_title('', true); ?></p>
+                        <p><?php echo category_description(); ?></p>
+                        <p class="btn btn-primary-outline cat-tag"><?php single_cat_title('', true); ?></p>
                     </div>
                 </div>
         <?php endif; ?>
-    </div><!-- .wrapper-navbar end -->
 
 
 

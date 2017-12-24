@@ -1,16 +1,16 @@
 <div id="carousel-notification" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-notification" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-notification" data-slide-to="1"></li>
-        <li data-target="#carousel-notification" data-slide-to="2"></li>
-        <li data-target="#carousel-notification" data-slide-to="3"></li>
-        <li data-target="#carousel-notification" data-slide-to="4"></li>
-    </ol>
     <div class="carousel-inner" role="listbox">
             <?php
             $i = 1;
-            query_posts('posts_per_page=5'); ?>
+            query_posts('posts_per_page=5&cat=-80'); ?>
             <?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-notification" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-notification" data-slide-to="1"></li>
+                    <li data-target="#carousel-notification" data-slide-to="2"></li>
+                    <li data-target="#carousel-notification" data-slide-to="3"></li>
+                    <li data-target="#carousel-notification" data-slide-to="4"></li>
+                </ol>
                 <?php if ($i==1) {
                      if ( !has_post_thumbnail() ) {
                         continue;

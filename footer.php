@@ -13,6 +13,7 @@ global $redux_teslim;
 ?>
 	</div><!-- #content .row -->
 </div><!-- #page .container -->
+    <?php //get_sidebar('footerfull'); ?>
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="site-info container">
             <div class="row">
@@ -22,11 +23,7 @@ global $redux_teslim;
                 <div class="col-xs-12 col-md-3 footer-block">
                     <h2 class="text-uppercase"><?php echo $redux_teslim['footer-abt']; ?></h2>
                     <ul>
-                        <li class="list-unstyled"><a href="#">The Dawah Institute</a></li>
-                        <li class="list-unstyled"><a href="#">Our Mission</a></li>
-                        <li class="list-unstyled"><a href="#">Our Programs</a></li>
-                        <li class="list-unstyled"><a href="#">Our Sites</a></li>
-                        <li class="list-unstyled"><a href="#">Testimonials</a></li>
+                        <?php echo $redux_teslim['footer-abt-content']; ?>
                     </ul>
                     <?php if( is_active_sidebar('footer-one') ) : ?>
                         <?php dynamic_sidebar('footer-one'); ?>
@@ -34,28 +31,18 @@ global $redux_teslim;
                 </div>
                 <div class="col-xs-12 col-md-3 footer-block">
                     <h2 class="text-uppercase">
-                        Our Partners
+                        <?php echo $redux_teslim['footer-2-heading']; ?>
                     </h2>
-                    <ul>
-                        <li class="list-unstyled"><a href="#">Africa</a></li>
-                        <li class="list-unstyled"><a href="#">America</a></li>
-                        <li class="list-unstyled"><a href="#">Asia</a></li>
-                        <li class="list-unstyled"><a href="#">Europe</a></li>
-                        <li class="list-unstyled"><a href="#">Middle East</a></li>
-                    </ul>
+                   <?php echo $redux_teslim['footer-2-content']; ?>
                 </div>
                 <div class="col-xs-12 col-md-3 footer-block">
                     <h2 class="text-uppercase">
-                        Contact
+                        <?php echo $redux_teslim['footer-3-heading']; ?>
                     </h2>
-                    <address>
-                        <strong>Dawah Institute of Nigeria</strong><br>
-                        IW 2 Ilmi Avenue<br>
-                        Old Airport Quarters<br>
-                        PMB 229, Minna<br>
-                        Niger State, Nigeria<br>
-                        email: support@dawahinstitute.org
-                    </address>
+                    <?php  echo $redux_teslim['footer-3-content']; ?>
+                    <?php if( is_active_sidebar('footer-contact') ) : ?>
+                        <?php dynamic_sidebar('footer-contact'); ?>
+                    <?php endif; ?>
                 </div>
             </div><!-- .row -->
             <hr>

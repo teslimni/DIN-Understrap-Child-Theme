@@ -13,9 +13,10 @@ get_header(); ?>
   <!-- <div id="primary" class="content-area"> -->
 
   <main id="main" class="site-main col-xs-12" role="main">
-
+            <div class="cat-intro">
+                <p><?php echo category_description(); ?></p>
+            </div><!-- .cat-intro -->
            <div class="home-top row">
-
               <?php
                 $current_category = single_cat_title('', false);
                 $args = array(

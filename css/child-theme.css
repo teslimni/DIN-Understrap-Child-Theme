@@ -7371,25 +7371,46 @@ a.skip-link {
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
 
-@media (min-width: 768px) {
-  .jumbotron {
-    height: 514px; }
-    .home .jumbotron {
-      background-image: url("../img/grand-mosque.jpg"); }
-    .jumbotron .gift {
-      margin-left: 1rem;
-      height: 60%; } }
+.jumbotron {
+  background: #f6f6f6;
+  padding-top: 0;
+  padding-bottom: 0; }
 
-@media (max-width: 767px) {
-  .jumbotron .gift {
-    margin-bottom: 20px;
-    margin-left: 3.5rem;
-    width: 75%; } }
+.social__proof {
+  background: #f6f6f6;
+  padding-bottom: 20px; }
+  .social__proof-text {
+    font-size: 1.2rem;
+    margin-top: 25px; }
+  .social__proof-img {
+    display: flex;
+    justify-content: space-between; }
+    .social__proof-img img {
+      height: 70px;
+      width: 87px; }
 
-@media (min-width: 992px) {
-  .jumbotron .gift {
-    margin-bottom: 20px;
-    margin-left: 8rem; } }
+.section {
+  padding: 70px 0; }
+  .section__title {
+    border-bottom: 3px solid #000;
+    border-bottom-width: 3px;
+    margin: 25px auto;
+    padding-bottom: 5px;
+    text-align: center; }
+
+#about button {
+  display: block;
+  margin: 0 auto; }
+
+#services {
+  background: #f6f6f6; }
+  #services img {
+    display: block;
+    margin: 0 auto;
+    width: 50%; }
+  #services button {
+    display: block;
+    margin: auto; }
 
 .news.widget_newsletters {
   background: #eee;
@@ -7464,6 +7485,9 @@ a.skip-link {
     .cat-item .h5:last-of-type {
       border-bottom: 0 solid #fff; }
 
+h4.h5.post-title {
+  font-size: 1rem; }
+
 .assistive-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -7500,7 +7524,8 @@ a.skip-link {
     .cat-box {
       padding: 96px 0; } }
   .cat-box .cat-description {
-    margin-left: 10rem; }
+    margin-left: 10rem;
+    color: #fff; }
     @media all and (max-width: 767px) {
       .cat-box .cat-description {
         margin: 0 15px; } }
@@ -7530,6 +7555,14 @@ a.skip-link {
   left: 0;
   color: #fff;
   width: 100%; }
+
+.cat-intro {
+  background: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+  font-weight: 500; }
 
 .content-ad {
   background: #000;
@@ -7598,10 +7631,11 @@ article .wp-post-image {
 a.btn-download {
   color: #fff !important; }
 
-#secondary img,
-article img,
-figure {
-  width: 150px; }
+h4.card-title.post-title.h5 {
+  font-size: 1.2rem; }
+
+#secondary .h5, #secondary h5 {
+  font-size: 1rem; }
 
 aside .nav-link h5 {
   font-size: 1rem; }
@@ -7634,7 +7668,6 @@ aside .nav-link h5 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 3rem;
   width: 30%; }
   @media all and (max-width: 360px) {
     .footer-logo {
@@ -7662,5 +7695,57 @@ blockquote {
   .ref p {
     font-size: .9rem; }
 
-.course_unit .post-title {
-  color: red; }
+.book-cover > img {
+  width: 44%;
+  margin-left: 28%; }
+
+.heading-book {
+  padding: 1px 10px;
+  background: #eee;
+  margin-bottom: 1px; }
+
+.book-id-title > h1 {
+  text-decoration: none !important;
+  font-size: 3rem; }
+
+.content-block {
+  border: 3px solid #eee;
+  border-radius: 5px; }
+
+.content-book {
+  background: #fff;
+  border: 6px solid #ddd;
+  border-radius: 10px; }
+
+.single-book .wrapper {
+  padding-top: 0; }
+
+.content-read {
+  border-radius: 10px; }
+
+.book-content {
+  padding: 10px;
+  text-align: justify; }
+
+.book-optin-bg {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
+.book-card {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px; }
+
+.book-button a {
+  color: #fff; }
+
+.reply {
+  margin: 20px 0;
+  border: 1px solid #eee;
+  width: 20%;
+  border-radius: 5px;
+  padding: 5px 0;
+  text-align: center; }
+  .reply:hover {
+    background: #eee; }
