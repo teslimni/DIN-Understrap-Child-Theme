@@ -44,6 +44,6 @@
             <?php endif; ?>
         </div>
         <button type="button" class="btn btn-danger m-t-2 m-b-3 article__btn">
-            View all our articles
+            View all articles
         </button>
 </div>
