@@ -75,3 +75,7 @@
 .list-inline-item:not(:last-child) {
     margin: 25px;
 }
+
+.home a.card__read-more {
+  color: red;
+}
