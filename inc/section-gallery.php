@@ -31,8 +31,8 @@ if( have_rows('gallery_section') ):
             <div class="col-md-12">
                 <div class="row">
                     <?php $images = get_sub_field('gallery_images');
-                    //var_dump($images); ?>
-                    <?php if ($images ) : ?>
+
+                     if ($images ) : ?>
                         <?php foreach ( $images as $image ) : ?>
                     <div class="col-xs-6 col-md-3">
                         <img class="img-fluid m-b-2" src="<?php echo $image['url']; ?>" alt="#">
