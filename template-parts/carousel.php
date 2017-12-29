@@ -2,7 +2,12 @@
     <div class="carousel-inner" role="listbox">
             <?php
             $i = 1;
-            query_posts('posts_per_page=5&cat=-80'); ?>
+            query_posts(
+                array(
+                    'posts_per_page' => 5,
+                    'post_type' => 'post'
+                    )
+            ); ?>
             <?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-notification" data-slide-to="0" class="active"></li>
