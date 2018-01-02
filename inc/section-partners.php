@@ -7,8 +7,8 @@
                 <div class="col-md-12">
                     <div class="section__title">
                         <h2>
-                            <?php echo the_sub_field('partners_section_title'); ?>
-                    <?php echo the_sub_field('partners_logo'); ?>
+                            <?php the_sub_field('partners_section_title'); ?>
+                    <?php the_sub_field('partners_logo'); ?>
                             <span></span>
                         </h2>
                     </div>
