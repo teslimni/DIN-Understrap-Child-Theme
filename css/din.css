@@ -9,6 +9,10 @@
   padding: 0px 0 0px 0;
 }
 
+.social__proof-img > ul {
+  margin-bottom: 0;
+}
+
 .home .section a {
   color: #fff;
 }
@@ -73,7 +77,7 @@
   padding: 15px;
 }
 .list-inline-item:not(:last-child) {
-    margin: 25px;
+    margin: 15px;
 }
 
 .home a.card__read-more {

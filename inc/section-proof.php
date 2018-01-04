@@ -1,4 +1,4 @@
-<div class="col-md-12 social__proof-img p-t-2">
+<div class="col-md-12 social__proof-img">
 
         <?php
 
