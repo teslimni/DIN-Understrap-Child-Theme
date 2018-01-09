@@ -1,5 +1,5 @@
 <div class="section__features">
-        <div class="section__title">
+        <div class="section__title wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
             <h2>
                 Latest Articles
                 <span></span>
@@ -23,7 +23,7 @@
             if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <!-- post -->
 
-            <div class="col-md-4">
+            <div class="col-md-4 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
                 <div class="card mb-3">
                     <?php if ( has_post_thumbnail() ) : ?>
                          <?php the_post_thumbnail('medium', ['class' => 'card-img-top']); ?>
@@ -46,7 +46,7 @@
             <?php endif; ?>
             <?php wp_reset_query(); ?>
         </div>
-        <button type="button" class="btn btn-danger m-t-2 m-b-3 article__btn">
+        <button type="button" class="btn btn-danger m-t-2 m-b-3 article__btn wow fadeIn" data-wow-delay="0.4s">
             View all articles
         </button>
 </div>
