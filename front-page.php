@@ -5,19 +5,19 @@
 
 get_header();
 ?>
-<section class="jumbotron jumbotron-fluid">
+<section class="jumbotron jumbotron-fluid wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
     <div class="hero">
         <?php get_template_part('inc/section', 'hero'); ?>
     </div>
 </section>
-<section class="section social__proof">
+<section class="section social__proof wow bounceInUp"  data-wow-duration="2s" data-wow-delay="1s">
     <div class="container">
         <div class="row">
             <?php get_template_part('inc/section', 'proof'); ?>
         </div>
     </div>
 </section>
-<section class="section" id="about">
+<section class="section wow fadeIn" id="about" data-wow-duration="2s" data-wow-delay="2s">
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3">
@@ -26,7 +26,7 @@ get_header();
         </div>
     </div>
 </section>
-<section class="section services" id="services">
+<section class="section services wow slideInRight" id="services" data-wow-duration="2s" data-wow-delay="0.1s">
     <div class="container">
         <div class="row">
             <h2 class="section__title"><?php echo the_field('services_section_title'); ?></h2>
@@ -61,7 +61,7 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="section__title">
+                <div class="section__title wow fadeIn" data-wow-delay="0.5s">
                     <h2>
                         Contact Us
                         <span></span>

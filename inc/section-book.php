@@ -7,20 +7,20 @@ if( have_rows('latest_book_section') ):
 
         if( get_row_layout() == 'latest_book' ): ?>
 
-            <h2 class="section__title">
+            <h2 class="section__title wow fadeIn" data-wow-delay="0.4s">
            <?php the_sub_field('book_section_title'); ?>
                 <span></span>
             </h2>
             <div class="row m-b-3">
-                <div class="col-md-4 offset-md-2">
+                <div class="col-md-4 offset-md-2 wow slideInLeft" data-wow-delay="0.1s">
                     <img class="img-fluid" src="<?php the_sub_field('latest_book_image'); ?>" alt="<?php the_sub_field('latest_book_title'); ?>">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
                     <h2><?php the_sub_field('latest_book_title'); ?></h2>
                     <p><?php the_sub_field('latest_book_description'); ?></p>
                 </div>
             </div>
-            <button type="button" class="btn btn-danger m-t-2 m-b-3 book__btn">
+            <button type="button" class="btn btn-danger m-t-2 m-b-3 book__btn wow fadeIn" data-wow-delay="0.4s">
                 <a href="<?php the_sub_field('latest_book_button_url'); ?>">
                 <?php the_sub_field('latest_book_button_text'); ?>
                 </a>

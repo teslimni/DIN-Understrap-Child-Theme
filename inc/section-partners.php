@@ -5,15 +5,15 @@
         while ( have_rows('partners_section') ) : the_row();
             if( get_row_layout() == 'partners' ): ?>
                 <div class="col-md-12">
-                    <div class="section__title">
+                    <div class="section__title wow fadeIn" data-wow-delay="0.5s">
                         <h2>
                             <?php the_sub_field('partners_section_title'); ?>
-                    <?php the_sub_field('partners_logo'); ?>
+                            <?php the_sub_field('partners_logo'); ?>
                             <span></span>
                         </h2>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 wow fadeIn" data-wow-delay="1s">
                     <?php
                     $images = get_sub_field('partners_logos');
                     if( $images ): ?>
@@ -27,7 +27,7 @@
                         </ul>
                     <?php endif; ?>
                 </div>
-                <button type="button" class="btn btn-danger m-t-2 m-b-3 article__btn">
+                <button type="button" class="btn btn-danger m-t-2 m-b-3 article__btn wow fadeIn" data-wow-delay="0.4s">
                     <a href="<?php the_sub_field('partners_section_button_url'); ?>">
                         <?php the_sub_field('partners_section_button_text'); ?>
                     </a>
