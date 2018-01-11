@@ -8,14 +8,13 @@
                     <div class="section__title wow fadeIn" data-wow-delay="0.5s">
                         <h2>
                             <?php the_sub_field('partners_section_title'); ?>
-                            <?php the_sub_field('partners_logo'); ?>
                             <span></span>
                         </h2>
                     </div>
                 </div>
                 <div class="col-md-12 wow fadeIn" data-wow-delay="1s">
                     <?php
-                    $images = get_sub_field('partners_logos');
+                    $images = get_sub_field('partners_logo');
                     if( $images ): ?>
 
                         <ul class="list-inline text-center">

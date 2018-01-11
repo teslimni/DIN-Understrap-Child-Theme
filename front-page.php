@@ -10,7 +10,7 @@ get_header();
         <?php get_template_part('inc/section', 'hero'); ?>
     </div>
 </section>
-<section class="section social__proof wow bounceInUp"  data-wow-duration="2s" data-wow-delay="1s">
+<section class="section social__proof wow fadeIn"  data-wow-duration="2s" data-wow-delay="1s">
     <div class="container">
         <div class="row">
             <?php get_template_part('inc/section', 'proof'); ?>
