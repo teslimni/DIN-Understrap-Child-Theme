@@ -6,10 +6,10 @@ if( have_rows('gallery_section') ):
         // check current row layout
         if( get_row_layout() == 'gallery_content' ): ?>
         <div class="row">
-            <div class="section__title">
+            <div class="section__title m-b-3">
                 <h2 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
                     <?php the_sub_field('gallery_title'); ?>
-                    <span></span>
+
                 </h2>
             </div>
             <div class="col-md-12">
@@ -40,7 +40,7 @@ if( have_rows('gallery_section') ):
                     <?php endforeach; endif; ?>
                 </div>
 
-                   <button type="button" class="btn btn-danger m-t-2 gallery__btn wow fadeIn" data-wow-delay="0.5">
+                   <button type="button" class="btn btn-danger btn-lg m-t-2 gallery__btn wow fadeIn" data-wow-delay="0.5">
                         <a href="<?php the_sub_field('gallery_button_url'); ?>">
                             <?php the_sub_field('gallery_button_text'); ?>
                         </a>

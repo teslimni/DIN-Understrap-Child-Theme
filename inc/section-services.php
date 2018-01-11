@@ -9,7 +9,8 @@
                 if( get_row_layout() == 'services_content') : ?>
                     <div class="col-md-4 services__item m-b-3">
                         <img class="img-fluid" src="<?php the_sub_field('service_image'); ?>" alt="#">
-                        <h2 class="services__item-title m-t-1 m-b-1"><?php the_sub_field('service_title'); ?></h2>
+                        <h2 class="services__item-title m-t-1 m-b-1"><?php the_sub_field('service_title'); ?>
+                        </h2>
                         <div class="text-justify">
                             <?php the_sub_field('service_description'); ?>
                         </div>
