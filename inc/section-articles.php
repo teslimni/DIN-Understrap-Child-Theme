@@ -33,7 +33,7 @@
                     <h4 class="card-title"><?php the_title(); ?></h4>
                     <p class="card-text">
                         <?php the_content(); ?>
-                        <a  class="card__read-more" href="<?php the_permalink(); ?>">Read more ...</a>
+                        <a class="card__read-more" href="<?php the_permalink(); ?>">Read more ...</a>
                     </p>
                   </div>
                 </div>
@@ -46,7 +46,7 @@
             <?php endif; ?>
             <?php wp_reset_query(); ?>
         </div>
-        <button type="button" class="btn btn-danger m-t-2 m-b-3 article__btn wow fadeIn" data-wow-delay="0.4s">
-            View all articles
+        <button type="button" class="btn btn-danger btn-lg m-t-2 m-b-3 article__btn wow fadeIn" data-wow-delay="0.4s">
+            <a href="#">View all articles</a>
         </button>
 </div>

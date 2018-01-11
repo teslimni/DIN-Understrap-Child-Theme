@@ -7,14 +7,14 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         while ( have_rows('about_section') ) : the_row();
 
             if( get_row_layout() == 'about_section_content' ): ?>
-                <h2 class="section__title">
-               <?php the_sub_field('about_title'); ?>
+                <div class="section__title">
+                    <h2><?php the_sub_field('about_title'); ?></h2>
                 <span></span>
-                </h2>
+                </div>
                 <div class="section__text text-justify">
                    <?php the_sub_field('about_content'); ?>
                 </div>
-                <button type="button" class="btn btn-danger m-b-3">
+                <button type="button" class="btn btn-danger m-t-2 m-b-3">
                     <a class="text-white" href="<?php the_sub_field('about_url'); ?>">
                         <?php the_sub_field('about_button_text'); ?>
                     </a>

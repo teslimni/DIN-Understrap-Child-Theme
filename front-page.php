@@ -6,7 +6,7 @@
 get_header();
 ?>
 <section class="jumbotron jumbotron-fluid wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-    <div class="hero">
+    <div class="hero carousel slide"  id="carouselhero" data-ride="carousel">
         <?php get_template_part('inc/section', 'hero'); ?>
     </div>
 </section>
@@ -29,7 +29,9 @@ get_header();
 <section class="section services wow slideInRight" id="services" data-wow-duration="2s" data-wow-delay="0.1s">
     <div class="container">
         <div class="row">
-            <h2 class="section__title"><?php echo the_field('services_section_title'); ?></h2>
+            <div class="section__title m-b-3">
+                <h2><?php echo the_field('services_section_title'); ?></h2>
+            </div>
             <?php get_template_part('inc/section', 'services'); ?>
         </div>
     </div>
@@ -57,7 +59,7 @@ get_header();
         <?php get_template_part('inc/section','partners'); ?>
     </div>
 </section>
-<section>
+<section class="section contact" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
