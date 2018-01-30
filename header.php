@@ -55,7 +55,7 @@
                             'menu_class' => 'nav navbar-nav',
                             'fallback_cb' => '',
                             'menu_id' => 'main-menu',
-                            'walker' => new wp_bootstrap_navwalker()
+
                         )
                 ); ?>
 
@@ -66,7 +66,7 @@
         <?php if( is_category() ) : ?>
                 <div class="cat-box">
                     <div class="cat-description">
-                        <p><?php echo category_description(); ?></p>
+                        <?php echo category_description(); ?>
                         <p class="btn btn-primary-outline cat-tag"><?php single_cat_title('', true); ?></p>
                     </div>
                 </div>

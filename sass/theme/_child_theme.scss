@@ -4,11 +4,11 @@
     padding: 50px;
     border-radius: 5px 5px;
     text-align: center;
-
     .btn {
         margin-top: 10px;
     }
 }
+
 .hcopy-text {
     line-height: 1.3;
     margin-bottom: 30px;
@@ -54,7 +54,7 @@
     }
 }
 
- .post- {
+.post- {
     &title {
         a {
             &:hover {
@@ -62,31 +62,28 @@
             }
         }
     }
- }
+}
 
- .resource_meta {
+.resource_meta {
     background: #eee;
     padding: 20px;
     border: #ddd solid 5px;
     margin-bottom: 50px;
- }
+}
 
 // Justified nav links
 // -------------------------//
-
 @mixin nav-justified($breakpoint: md) {
     width: 100%;
-
     .nav-item {
         float: none;
     }
-
     .nav-link {
         text-align: center;
         margin-bottom: 5px;
     }
-
-    > .dropdown .dropdown-menu { //todo: remove child selector
+    >.dropdown .dropdown-menu {
+        //todo: remove child selector
         top: auto;
         left: auto;
     }
@@ -94,7 +91,7 @@
         .nav-item {
             display: table-cell;
             width: 1%;
-    }
+        }
         .nav-link {
             margin-bottom: 0;
         }
@@ -106,7 +103,7 @@
 }
 
 .carousel-caption {
-    background-color: rgba(000,000,000,.55) !important;
+    background-color: rgba(000, 000, 000, .55) !important;
     & a {
         color: #fff;
     }
@@ -120,16 +117,12 @@
 //     font-size: 1.5rem;
 //     font-weight: 600;
 // }
-
 .cat-item {
-	display: flex;
-
+    display: flex;
     .h5 {
         border-bottom: 1px solid #ded;
         font-size: 1.2rem;
-        padding-bottom: 16px;
-        // margin-bottom: 1rem;
-
+        padding-bottom: 16px; // margin-bottom: 1rem;
         &:last-of-type {
             border-bottom: 0 solid #fff;
         }
@@ -148,16 +141,17 @@ h4.h5.post-title {
     overflow: hidden;
 }
 
-.post-navigation, .comment-respond {
-     margin-top: 50px;
+.post-navigation,
+.comment-respond {
+    margin-top: 50px;
 }
 
 .post-navigation {
-
     .nav-links {
         display: flex;
     }
-    .nav-previous, .nav-next {
+    .nav-previous,
+    .nav-next {
         flex-basis: 50%;
     }
 }
@@ -173,37 +167,31 @@ h4.h5.post-title {
 }
 
 // Category Styles
-
 .cat-box {
-  background: #00aeef;
-  background-image: url("../img/grand-mosque.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  margin-bottom: 2rem;
-  padding: 96px 2rem;
-  text-align: justify;
-
-  @media all and (max-width: 360px) {
-     padding: 96px 0;
+    background: #00aeef;
+    background-image: url("../img/grand-mosque.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 96px 2rem;
+    text-align: justify;
+    @media all and (max-width: 360px) {
+        padding: 96px 0;
     }
-
     .cat-description {
         margin-left: 10rem;
         color: #fff;
-
         @media all and (max-width: 767px) {
-           margin: 0 15px;
+            margin: 0 15px;
         }
     }
-
     .cat-tag {
-      color: #eee;
-      border-color: #eee;
-      margin-top: 76px;
-      padding: 9px 3rem;
+        color: #eee;
+        border-color: #eee;
+        margin-top: 76px;
+        padding: 9px 3rem;
     }
-
     .category-god & {
         background-image: url("../img/Allah.jpg");
     }
@@ -223,6 +211,7 @@ h4.h5.post-title {
         background-image: url("../img/misconception.jpg");
     }
 }
+
 .cat-label {
     background: rgba(000, 000, 000, .55);
     padding: 5px;
@@ -232,6 +221,7 @@ h4.h5.post-title {
     color: #fff;
     width: 100%;
 }
+
 .cat-intro {
     background: #eee;
     padding: 10px;
@@ -241,21 +231,17 @@ h4.h5.post-title {
     font-weight: 500;
 }
 
-
 .content-ad {
     background: #000;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     padding: 4rem;
-
-    @media all and (max-width: 360px)
-     {
+    @media all and (max-width: 360px) {
         padding: 2rem;
     }
-
     p {
         font-size: 1rem;
-        @media all and (min-width: 500px){
+        @media all and (min-width: 500px) {
             font-size: 2rem;
         }
     }
@@ -267,14 +253,14 @@ h4.h5.post-title {
     }
 }
 
-.bottom-side, .aside {
+.bottom-side,
+.aside {
     & .tab-content {
         padding: 2em;
         margin-top: -0.1rem;
         width: 96.2%;
         margin-left: 6px;
     }
-
 }
 
 .nav-tabs .nav-item {
@@ -285,11 +271,10 @@ h4.h5.post-title {
     border-bottom: none;
     position: relative;
     z-index: 99;
-    &  > li {
-       border-bottom: 0;
+    &>li {
+        border-bottom: 0;
     }
 }
-
 
 //========== Single Page ===========
 article {
@@ -303,6 +288,7 @@ article {
     margin-top: 62px;
     width: 100%;
 }
+
 .wpmlcustomfield1 {
     display: none;
 }
@@ -310,23 +296,24 @@ article {
 .comments-area {
     clear: both;
 }
-.comment-author.vcard > .avatar {
+
+.comment-author.vcard>.avatar {
     border-radius: 100%;
     width: 34px !important;
 }
-
 
 .prev,
 .next {
     margin-bottom: 50px;
     width: 50%;
 }
+
 .prev {
     float: left;
 }
+
 .next {
-    float: right;
-    //text-align: right;
+    float: right; //text-align: right;
     border-left: 2px solid #666;
     padding-left: 20px;
 }
@@ -339,18 +326,14 @@ h4.card-title.post-title.h5 {
     font-size: 1.2rem;
 }
 
-
 // Sidebar
 #secondary {
-    .h5, h5 {
+    .h5,
+    h5 {
         font-size: 1rem;
     }
 }
-#secondary img,
-article img,
-figure {
-    //width: 150px;
-}
+
 
 aside {
     .nav-link {
@@ -361,29 +344,22 @@ aside {
 }
 
 //Footer Styles
-
-
 .site-footer {
     background-color: #434a54;
     padding-top: 100px;
-
     & h2 {
         color: #ffffff;
         font-size: 1.2rem;
     }
-
     & address {
         color: #aab2bd;
     }
-
     & a {
         color: #aab2bd;
-
         &:hover {
             color: $brand-primary;
         }
     }
-
     & ul {
         padding: 0;
         margin: 0;
@@ -393,11 +369,9 @@ aside {
 .home-bottom {
     .nav-tabs li {
         width: 50%;
-
         @media all and (max-width: 360px) {
             width: 49%;
         }
-
         &:nth-child(2) {
             width: 48%;
         }
@@ -408,20 +382,16 @@ aside {
     &-logo {
         display: block;
         margin-left: auto;
-        margin-right: auto;
-        //padding-top: 3rem;
+        margin-right: auto; //padding-top: 3rem;
         width: 30%;
-
         @media all and (max-width: 360px) {
             margin-bottom: 3rem;
             padding-top: 1rem;
-          }
-    }
-
-    &-block {
-            margin-bottom: 2rem;
-        @media all and (max-width: 360px) {
         }
+    }
+    &-block {
+        margin-bottom: 2rem;
+        @media all and (max-width: 360px) {}
     }
 }
 
@@ -435,11 +405,13 @@ a {
         text-decoration: none;
     }
 }
+
 blockquote {
     background: #eee;
     padding: 50px;
     font-weight: bold;
 }
+
 .ref {
     margin-top: 50px;
     h3 {
@@ -451,54 +423,65 @@ blockquote {
     }
 }
 
-.book-cover > img {
-  width: 44%;
-  margin-left: 28%
+.book-cover>img {
+    width: 44%;
+    margin-left: 28%
 }
+
 .heading-book {
-  padding: 1px 10px;
-  background: #eee;
-  margin-bottom: 1px;
+    padding: 1px 10px;
+    background: #eee;
+    margin-bottom: 1px;
 }
-.book-id-title > h1 {
-  text-decoration: none !important;
-  font-size: 3rem;
+
+.book-id-title>h1 {
+    text-decoration: none !important;
+    font-size: 3rem;
 }
+
 .content-block {
-  border: 3px solid #eee;
-  border-radius: 5px;
+    border: 3px solid #eee;
+    border-radius: 5px;
 }
+
 .content-book {
-  background: #fff;
-  border: 6px solid #ddd;
-  border-radius: 10px;
+    background: #fff;
+    border: 6px solid #ddd;
+    border-radius: 10px;
 }
+
 .single-book .wrapper {
-  padding-top: 0;
+    padding-top: 0;
 }
+
 .content-read {
-  //border: 1px solid #eee;
-  border-radius: 10px;
+    //border: 1px solid #eee;
+    border-radius: 10px;
 }
+
 .book-content {
-  padding: 10px;
-  text-align: justify;
+    padding: 10px;
+    text-align: justify;
 }
+
 .book-optin-bg {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+
 .book-card {
     border: 1px solid #eee;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
 }
+
 .book-button {
-   a {
-    color: #fff;
-   }
+    a {
+        color: #fff;
+    }
 }
+
 .reply {
     margin: 20px 0;
     border: 1px solid #eee;
@@ -511,4 +494,9 @@ blockquote {
     }
 }
 
-
+#404-wrapper {
+    #content {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

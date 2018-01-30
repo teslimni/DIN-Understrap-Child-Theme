@@ -9,12 +9,12 @@
 
 get_header(); ?>
 
-<div class="container">
+<div class="container testingme">
   <!-- <div id="primary" class="content-area"> -->
     <main id="main" class="site-main col-xs-12" role="main">
        <div class="row">
            <div class="col-xs-12 m-t-3">
-                <h2><?php the_title(); ?></h2>          
+                <h2><?php the_title(); ?></h2>
            </div>
        </div>
        <hr>

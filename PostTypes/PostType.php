@@ -21,20 +21,21 @@ $options = [
 
 
 // Bio PostType
-$bios = [
-    'name'     => 'bio',
-    'singular' => 'Bio',
-    'plural'   => 'Bios',
-    'slug'     => 'bios'
-];
-$bios = new PostType('bios', $options);
-$bios->icon('dashicons-admin-users');
+// $bios = [
+//     'name'     => 'bio',
+//     'singular' => 'Bio',
+//     'plural'   => 'Bios',
+//     'slug'     => 'bios'
+// ];
+// $bios = new PostType('bios', $options);
+// $bios->icon('dashicons-admin-users');
 
 //Book Post Type
 $names = [
-    'name'     => 'name',
+    'name'     => 'book',
     'singular' => 'Book',
     'plural'   => 'Books',
     'slug'     => 'books'
 ];
 $books = new PostType($names, $options);
+$books->icon('dashicons-book');

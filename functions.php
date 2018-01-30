@@ -28,6 +28,11 @@ function understrap_setup() {
 
     // add theme support: feed links
     add_theme_support('automatic-feed-links');
+
+    // register navigation menus
+    register_nav_menus(array(
+        'primary' => __('Primary'),
+    ));
 } // understrap_setup
 add_action( 'after_setup_theme', 'understrap_setup' );
 
@@ -36,8 +41,8 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array());
     wp_enqueue_style( 'animate-styles', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css');
     wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), '0.1.0', true );
-    wp_enqueue_script('wow-script', get_stylesheet_directory_uri() . '/js/wow.min.js', array());
-    wp_enqueue_script('animate-script', get_stylesheet_directory_uri() . '/js/animate.js', array());
+    wp_enqueue_script('wow-script', get_stylesheet_directory_uri() . '/js/wow.min.js', array(), true);
+    wp_enqueue_script('animate-script', get_stylesheet_directory_uri() . '/js/animate.js', array(), true);
 }
 
 function all_excerpts_get_more_link($post_excerpt) {
