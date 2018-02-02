@@ -14,7 +14,7 @@ get_header(); ?>
 
   <main id="main" class="site-main col-xs-12" role="main">
             <div class="cat-intro">
-                <p><?php echo category_description(); ?></p>
+                <?php echo category_description(); ?>
             </div><!-- .cat-intro -->
            <div class="home-top row">
               <?php

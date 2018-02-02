@@ -6,4 +6,4 @@ npm-debug.log
 vendor/*
 img/*
 debug.log
-
+.vscode/

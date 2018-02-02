@@ -32,7 +32,7 @@
                   <div class="card-body">
                     <h4 class="card-title"><?php the_title(); ?></h4>
                     <p class="card-text">
-                        <?php the_content(); ?>
+                        <?php the_excerpt(); ?>
                         <a class="card__read-more" href="<?php the_permalink(); ?>">Read more ...</a>
                     </p>
                   </div>

@@ -11,7 +11,7 @@ get_header(); ?>
         <?php while( have_rows('book') ) : the_row(); ?>
             <?php if( get_row_layout() == 'book_identity' ) : ?>
                 <?php $bg = get_sub_field('hero_bg'); ?>
-    <div id="content" class="container-fluid bg-success bg-box" style="background-image: url(<?php echo $bg; ?>)">
+                    <div id="content" class="container-fluid bg-success bg-box" style="background-image: url(<?php echo $bg; ?>)">
             <?php endif; endwhile; ?>
     <?php endif; ?>
         <div class="row p-t-3 p-b-3">
@@ -19,10 +19,10 @@ get_header(); ?>
                     <?php if(have_rows('book') ) : ?>
                         <?php while( have_rows('book') ) : the_row(); ?>
                             <?php if( get_row_layout() == 'book_identity' ) : ?>
-                <div class="row">
+                            <div class="row">
                                 <div class="col-sm-6 book-cover">
-                                   <img src="<?php the_sub_field('book_cover_image'); ?>"> 
-                                </div> 
+                                   <img src="<?php the_sub_field('book_cover_image'); ?>">
+                                </div>
                                 <hr>
                                 <div class="col-sm-6 book-id-title">
                                     <h2 class="h1">
@@ -31,7 +31,7 @@ get_header(); ?>
                                     <h4>
                                         <?php the_sub_field('book_sub_title'); ?>
                                     </h4>
-                                        
+
                                 </div>
                             <?php endif; ?>
                         <?php endwhile; ?>
@@ -54,13 +54,13 @@ get_header(); ?>
                             <div class="heading-book" role="tab">
                                 <h2 class="h5">
                                     <a data-toggle="collapse" href="#<?php echo $expandableHeading++; ?>" aria-expanded="true" aria-controls="$ariaControls">
-                                        <?php the_sub_field('heading'); ?>    
+                                        <?php the_sub_field('heading'); ?>
                                     </a>
                                 </h2>
                             </div>
                             <div class="book-content collapse show" id="<?php echo $collapseContent++; ?>" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                                 <?php the_sub_field('content_text'); ?>
-                            </div> 
+                            </div>
                         </div>
                     <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
